@@ -1,0 +1,280 @@
+body {
+    margin: 0px;
+    font-family: "Open Sans", sans-serif;
+    background: #75e2e9;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.information-form,
+.calculate-form {
+    padding: 20px 40px;
+    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.35);
+}
+
+.information-form {
+    background: #3786bd;
+    color: #fff;
+    border-top-left-radius: 20px;
+    /*    border-bottom-left-radius: 10px;*/
+}
+
+.information-form .result > h1,
+.calculate-form form > h1 {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.information-form .result > p {
+    padding: 40px 0 0 0;
+    margin: 0;
+    font-weight: 500;
+}
+
+.information-form .result > span {
+    font-weight: 100;
+}
+
+.information-form .result > button {
+    margin: 60px 0 0 0;
+    padding: 10px 40px;
+    background: #fff;
+    color: #515151;
+    /*    border-radius: 0px !important;*/
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transform: translate(50%, 50%);
+
+}
+
+.information-form .result > button:hover {
+    background: #d9d9f1;
+    transition: 0.3s;
+}
+
+.calculate-form {
+    color: #3786bd;
+    background: #fff;
+    /*    border-top-right-radius: 10px;*/
+    border-bottom-right-radius: 20px;
+    padding: 20px 40px;
+}
+
+.cost > label,
+.initial-payment > label,
+.number-years > label,
+.interest-rate > label {
+    color: #6a7070;
+    font-weight: 300;
+    font-size: 13px;
+    margin: 20px 0 5px 0;
+    display: block;
+}
+
+.calculate-form form .form-group .cost,
+.initial-payment {
+    margin-bottom: 40px;
+}
+
+.calculate-form .number-years > span{
+    display: inline-block;
+    color: #6a7070;
+    /*    float: right;*/
+    padding-left: 55px;
+    font-size: 20px;
+    padding-bottom: 0;
+}
+
+
+
+.calculate-form .form-group > button {
+    margin: 60px 0 0 0;
+    padding: 10px 40px;
+    background: #3786bd;
+    color: #fff;
+    border: none;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    float: right;
+}
+
+.calculate-form .form-group > button:hover {
+    background: #3e98d6;
+    transition: 0.3s;
+}
+
+input[type="range"] {
+    display: inline-block;
+    -webkit-appearance: none;
+    background-color: #bdc3c7;
+    width: 400px;
+    height: 2px;
+    border-radius: 5px;
+    margin: 0 auto;
+    outline: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: #3786bd;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+
+
+input[type="range"]::-webkit-slider-thumb:active {
+    transform: scale(1.2);
+}
+
+/*input form*/
+.number-input input[type="number"] {
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.number-input input[type=number]::-webkit-inner-spin-button,
+.number-input input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+
+.number-input {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-input button {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+}
+
+.number-input button:before,
+.number-input button:after {
+    display: inline-block;
+    position: absolute;
+    content: '';
+    height: 2px;
+    transform: translate(-50%, -50%);
+}
+
+.number-input button.plus:after {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.number-input input[type=number] {
+    text-align: center;
+}
+
+.number-input.number-input {
+    border: 1px solid #ced4da;
+    width: 30rem;
+    border-radius: .25rem;
+}
+
+.number-input.number-input button {
+    width: 2.6rem;
+    height: .7rem;
+}
+
+.number-input.number-input button.minus {
+    padding-left: 10px;
+}
+
+.number-input.number-input button:before,
+.number-input.number-input button:after {
+    width: .7rem;
+    background-color: #495057;
+}
+
+.number-input.number-input input[type=number] {
+    width: 25rem;
+    padding: .5rem;
+    border: 1px solid #ced4da;
+    border-width: 0 1px;
+    font-size: 1rem;
+    height: 2rem;
+    color: #495057;
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance: none) and (stroke-color:transparent) {
+
+        .number-input.def-number-input.safari_only button:before,
+        .number-input.def-number-input.safari_only button:after {
+            /*            margin-top: -.3rem;*/
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Creator Slava Bortnichenko*/
